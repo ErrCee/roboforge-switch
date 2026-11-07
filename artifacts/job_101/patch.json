@@ -1,0 +1,9 @@
+{
+  "patched_xml": "<mujoco model=\"job_101\">\n  <compiler angle=\"radian\"/>\n  <option timestep=\"0.002\" gravity=\"0 0 -9.81\"/>\n  <worldbody>\n    <body name=\"moving_link\" pos=\"0 0 0.3\">\n      <joint name=\"main_joint\" type=\"slide\" axis=\"0 0 1\"\n             range=\"0.0 0.0560\"\n             damping=\"2.0\" frictionloss=\"4.5\" stiffness=\"60.0\"/>\n      <geom name=\"payload\" type=\"capsule\" fromto=\"0 0 0 0.35 0 0\" size=\"0.025\" mass=\"0.5\"/>\n    </body>\n  </worldbody>\n  <actuator>\n    <motor name=\"main_motor\" joint=\"main_joint\" gear=\"20.0\" ctrllimited=\"true\" ctrlrange=\"-1.0 1.0\"/>\n  </actuator>\n</mujoco>",
+  "proposed_gear": 20.0,
+  "proposed_kp": 704.0,
+  "proposed_ki": 877.5,
+  "proposed_kd": 35.0,
+  "exceeds_thermal_cap": true,
+  "rationale": "Upgrading motor gear from 5.3N to 20.0N provides sufficient torque margin to overcome the 11.8N resistive load from gravity, friction, and return-spring stiffness."
+}

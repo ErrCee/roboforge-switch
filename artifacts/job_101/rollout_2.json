@@ -1,0 +1,19 @@
+{
+  "iteration": 2,
+  "total_steps": 1000,
+  "wall_time_ms": 20.75,
+  "initial_pos": 0.0,
+  "final_pos": 0.042,
+  "target_pos": 0.04,
+  "steady_state_error": 0.002,
+  "max_actuator_force": 20.0,
+  "actuator_saturation_pct": 0.9,
+  "resistive_load_estimate_n": 11.8,
+  "task_succeeded": true,
+  "diagnostic_summary": "PASS [CONVERGED]: Pos 0.0000 -> 0.0420m (target 0.0400m, deficit=0.0020). Saturation=0.9% at 20.0N vs 11.8N load.",
+  "gif_path": "artifacts/job_101/rollout_iter_2.gif",
+  "applied_gear": 20.0,
+  "applied_kp": 704.0,
+  "applied_ki": 877.5,
+  "applied_kd": 35.0
+}

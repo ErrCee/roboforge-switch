@@ -1,0 +1,13 @@
+<mujoco model="job_101">
+  <compiler angle="radian" />
+  <option timestep="0.002" gravity="0 0 -9.81" />
+  <worldbody>
+    <body name="moving_link" pos="0 0 0.3">
+      <joint name="main_joint" type="slide" axis="0 0 1" range="0.0 0.0560" damping="2.0" frictionloss="4.5" stiffness="60.0" />
+      <geom name="payload" type="capsule" fromto="0 0 0 0.35 0 0" size="0.025" mass="0.5" />
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="main_motor" joint="main_joint" gear="5.3" ctrllimited="true" ctrlrange="-1.0 1.0" />
+  </actuator>
+</mujoco>

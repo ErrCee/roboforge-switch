@@ -1,0 +1,19 @@
+{
+  "iteration": 1,
+  "total_steps": 1000,
+  "wall_time_ms": 19.58,
+  "initial_pos": 0.0,
+  "final_pos": 0.0015,
+  "target_pos": 0.04,
+  "steady_state_error": 0.0385,
+  "max_actuator_force": 5.3,
+  "actuator_saturation_pct": 100.0,
+  "resistive_load_estimate_n": 11.8,
+  "task_succeeded": false,
+  "diagnostic_summary": "FAIL [ACTUATOR STALLED]: Pos 0.0000 -> 0.0015m (target 0.0400m, deficit=0.0385). Saturation=100.0% at 5.3N vs 11.8N load.",
+  "gif_path": "artifacts/job_101/rollout_iter_1.gif",
+  "applied_gear": 5.3,
+  "applied_kp": 320.0,
+  "applied_ki": 650.0,
+  "applied_kd": 25.0
+}

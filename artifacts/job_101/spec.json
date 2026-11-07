@@ -1,0 +1,20 @@
+{
+  "job_id": "job_101",
+  "task_name": "@architect-agent [job_101] Build a vertical towe",
+  "user_prompt": "@architect-agent [job_101] Build a vertical tower-bolt latch opener that lifts a 500g steel bolt 4 cm upward against gravity and return-spring tension.",
+  "mjcf_xml": "<mujoco model=\"job_101\">\n  <compiler angle=\"radian\"/>\n  <option timestep=\"0.002\" gravity=\"0 0 -9.81\"/>\n  <worldbody>\n    <body name=\"moving_link\" pos=\"0 0 0.3\">\n      <joint name=\"main_joint\" type=\"slide\" axis=\"0 0 1\"\n             range=\"0.0 0.0560\"\n             damping=\"2.0\" frictionloss=\"4.5\" stiffness=\"60.0\"/>\n      <geom name=\"payload\" type=\"capsule\" fromto=\"0 0 0 0.35 0 0\" size=\"0.025\" mass=\"0.5\"/>\n    </body>\n  </worldbody>\n  <actuator>\n    <motor name=\"main_motor\" joint=\"main_joint\" gear=\"20.0\" ctrllimited=\"true\" ctrlrange=\"-1.0 1.0\"/>\n  </actuator>\n</mujoco>",
+  "joint_type": "slide",
+  "unit_label": "m",
+  "initial_position": 0.0,
+  "target_position": 0.04,
+  "payload_mass_kg": 0.5,
+  "actuator_gear": 20.0,
+  "thermal_force_cap": 11.2,
+  "kp_gain": 704.0,
+  "ki_gain": 877.5,
+  "kd_gain": 35.0,
+  "motion_vector": [
+    0.0,
+    -1.0
+  ]
+}
