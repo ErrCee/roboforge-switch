@@ -192,12 +192,12 @@ You are @control-firmware in the Switch room.
 
 ### Step 3: Run a Verified Problem Statement in Switch Chat
 
-1. Paste any of the verified prompts into `#robotics-lab-v2`:
+1. Paste any of the verified prompts into `#robotics-lab`:
    ```text
    @architect-agent [job_101] Build a vertical tower-bolt latch opener that lifts a 500g steel bolt 4 cm upward against gravity and return-spring tension.
    ```
 2. Watch `http://localhost:8090` progress through **Stages 1 to 3**, rendering the red stalled Iteration #1 GIF and the proposed `5.3 N -> 20.0 N` gear upgrade.
-3. Reply in `#robotics-lab-v2`:
+3. Reply in `#robotics-lab`:
    ```text
    @control-firmware approve job_101
    ```
